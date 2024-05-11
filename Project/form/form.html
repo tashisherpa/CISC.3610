@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="form.css" />
+  </head>
+  <body>
+    <a href="../../index.html">Home</a>
+    <h2>Form Project</h2>
+    <div id="container">
+        <h2>Weight on Planets Calculator</h2>
+        <label for="weight">Enter your weight (in kilograms):</label>
+        <input type="number" id="weight" name="weight" required>
+        
+        <div>
+            <input type="radio" id="mercury" name="planet" value="mercury" onclick="changeBackground('mercury')">
+            <label for="mercury">Mercury</label>
+        </div>
+        <div>
+            <input type="radio" id="venus" name="planet" value="venus" onclick="changeBackground('venus')">
+            <label for="venus">Venus</label>
+        </div>
+        <div>
+            <input type="radio" id="mars" name="planet" value="mars" onclick="changeBackground('mars')">
+            <label for="mars">Mars</label>
+        </div>
+        <div>
+            <input type="radio" id="jupiter" name="planet" value="jupiter" onclick="changeBackground('jupiter')">
+            <label for="jupiter">Jupiter</label>
+        </div>
+        <div>
+            <input type="radio" id="saturn" name="planet" value="saturn" onclick="changeBackground('saturn')">
+            <label for="saturn">Saturn</label>
+        </div>
+        <div>
+            <input type="radio" id="uranus" name="planet" value="uranus" onclick="changeBackground('uranus')">
+            <label for="uranus">Uranus</label>
+        </div>
+        <div>
+            <input type="radio" id="neptune" name="planet" value="neptune" onclick="changeBackground('neptune')">
+            <label for="neptune">Neptune</label>
+        </div>
+        
+        <button onclick="calculateWeight()">Calculate Weight</button>
+        <button onclick="resetForm()">Reset</button>
+        
+        <div id="result"></div>
+    </div>
+
+    <script src="form.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+.container {
+  position: relative;
+  width: max-content;
+  height: max-content;
+}
+
+canvas {
+  border: 2px solid;
+  border-color: #385454;
+  margin-top: 16px;
+}
+
+#rain {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

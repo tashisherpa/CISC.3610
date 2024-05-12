@@ -1,0 +1,16 @@
+body {
+    user-select: none;
+    -webkit-user-select: none; /* For Safari */
+    -moz-user-select: none; /* For Firefox */
+    -ms-user-select: none; /* For Internet Explorer/Edge */
+  }
+
+
+#container {
+    margin-top: 100px;
+    text-align: center; 
+  }
+
+  #drum {
+    display: inline-block;
+  }

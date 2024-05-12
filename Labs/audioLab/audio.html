@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio Lab</title>
+    <link rel="stylesheet" type="text/css" href="audio.css">
+    <style>
+        /* Style for the areas in the image map */
+        area {
+          outline: 2px solid red; /* Add a red outline to the areas */
+          cursor: pointer; /* Change cursor to pointer when hovering over the areas */
+        }
+      </style>
+</head>
+  <body>
+    <a href="../../index.html">Home</a>
+    <p>Click on the instrument to produce sound</p>
+    <div id="container">
+        <img src="drum.jpg" id="drum" alt="drum" usemap="#drum" />
+        <map name="drum">
+            <area id="bass-drum" coords="436,486,105" shape="circle">
+            <area id="floor-tom" coords="583,327,553,309,569,286,610,279,646,277,686,279,719,282,747,297,744,314,700,325,658,331,620,330" shape="poly">
+            <area id="snare" coords="247,331,284,334,319,329,352,324,376,315,387,304,364,286,315,278,261,277,224,284,199,290,185,308,201,319,211,325" shape="poly">
+            <area id="hi-tom" coords="301,193,319,175,346,164,380,166,410,173,429,187,434,205,408,219,375,226,345,222,320,216" shape="poly">
+            <area id="medium-tom" coords="469,181,493,172,519,167,540,168,562,173,587,175,605,188,611,203,600,220,566,227,534,231,498,230,473,223,455,213,450,196" shape="poly">
+            <area id="ride-cymbal" coords="704,198,745,195,769,192,795,188,823,180,849,173,871,160,887,148,884,131,862,122,829,118,795,118,766,120,738,122,712,128,682,135,655,142,630,151,616,165,616,182,643,193" shape="poly">
+            <area id="crash-cymbal" coords="130,38,128,25,142,16,160,15,179,15,204,13,229,15,271,17,292,21,320,29,342,44,327,59,291,59,243,63,202,59,164,51" shape="poly">
+            <area id="hi-hat" coords="6,194,36,200,79,201,115,204,167,200,197,194,203,186,187,175,153,171,127,166,101,166,71,165,41,168,17,176,5,184" shape="poly">
+        </map>
+    </div>
+
+    <audio id="bass-drum-sound" src="./drumSounds/bass.mp3"></audio>
+    <audio id="floor-tom-sound" src="./drumSounds/floor-tom.mp3"></audio>
+    <audio id="snare-sound" src="./drumSounds/snare.mp3"></audio>
+    <audio id="hi-tom-sound" src="./drumSounds/hi-tom.mp3"></audio>
+    <audio id="medium-tom-sound" src="./drumSounds/medium-tom.mp3"></audio>
+    <audio id="ride-cymbal-sound" src="./drumSounds/ride.mp3"></audio>
+    <audio id="crash-cymbal-sound" src="./drumSounds/crash.mp3"></audio>
+    <audio id="hi-hat-sound" src="./drumSounds/hi-hat.mp3"></audio>
+
+    <script src="audio.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+.chart-container {
+    display: inline-block;
+    margin-left: 100px;
+  }
+
+  canvas {
+    width: 500px;
+    height: 500px;
+  }

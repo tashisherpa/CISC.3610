@@ -1,0 +1,11 @@
+.custom-box {
+    background-color: #f9f4f1;
+    border: 1px solid #e39433;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .custom-img {
+    max-width: 100%;
+    height: auto;
+  }
